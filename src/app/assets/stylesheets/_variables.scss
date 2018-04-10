@@ -4,12 +4,14 @@
 $mq-breakpoints: (
     "sm": 767px,
     "md": 768px,
+    "ms": 1024px,
     "lg": 1379px
 );
 
 $mq-indents: (
     "sm": 2rem,
     "md": 2rem,
+    "ms": 2rem,
     "lg": 3rem
 );
 
@@ -22,12 +24,14 @@ $mq-container-widths: (
 $mq-container-indents: (
     "sm": map-get($mq-indents, "sm"),
     "md": map-get($mq-indents, "md"),
+    "ms": map-get($mq-indents, "ms"),
     "lg": map-get($mq-indents, "lg")
 );
 
 $mq-grid-gutters: (
     "sm": map-get($mq-indents, "sm"),
     "md": map-get($mq-indents, "md"),
+    "ms": map-get($mq-indents, "ms"),
     "lg": map-get($mq-indents, "lg")
 );
 

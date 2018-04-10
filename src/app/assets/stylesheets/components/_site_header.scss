@@ -7,9 +7,18 @@
     right: 0;
     z-index: 100;
     padding: map-get($mq-indents, 'sm');
+    transition: all .4s;
+
+    &.header-scroll-mod {
+        background: #fff;
+
+        .site-header__logo {
+            width: 12rem;
+        }
+    }
 
     @include mq(lg) {
-        padding: map-get($mq-indents, 'lg');
+        padding: map-get($mq-indents, 'md');
     }
 
     &__grid {
@@ -20,16 +29,18 @@
 
     &__logo {
         display: block;
-        max-width: 12rem;
+        width: 12rem;
+        transition: width .4s;
 
         @include mq(md) {
-            max-width: 22rem;
+            width: 18rem;
         }
 
         > img {
             width: 100%;
             height: auto;
             vertical-align: top;
+            transition: .4s;
         }
     }
 

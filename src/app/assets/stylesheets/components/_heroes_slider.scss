@@ -19,6 +19,10 @@
             image: url(../img/slider-bg.png);
         };
 
+        @include mq(ms) {
+            margin: 0 18rem;
+        }
+
         @include mq(lg) {
             margin: 0 24rem;
         }
@@ -32,8 +36,6 @@
             }
         }
     }
-
-
 
     &__item {
         @include mq(md) {
@@ -71,12 +73,16 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
 
+    @include mq(ms) {
+        margin: 4rem 18rem;
+    }
+
     @include mq(lg) {
         margin: 4rem 24rem;
     }
 
     .slick-slide {
-        margin: 0 2rem;
+        margin: 0 1rem;
 
         img {
             display: block;
@@ -127,6 +133,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        outline: none !important; // overrides
 
         @include mq(sm) {
             display: none !important; // overrides

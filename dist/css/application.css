@@ -695,6 +695,13 @@ a.button {
   }
 }
 
+@media all and (min-width: 1024px) {
+  .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 @media all and (min-width: 1379px) {
   .container {
     padding-right: 3rem;
@@ -1015,11 +1022,21 @@ a.button {
   right: 0;
   z-index: 100;
   padding: 2rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.site-header.header-scroll-mod {
+  background: #fff;
+}
+
+.site-header.header-scroll-mod .site-header__logo {
+  width: 12rem;
 }
 
 @media all and (min-width: 1379px) {
   .site-header {
-    padding: 3rem;
+    padding: 2rem;
   }
 }
 
@@ -1037,12 +1054,14 @@ a.button {
 
 .site-header__logo {
   display: block;
-  max-width: 12rem;
+  width: 12rem;
+  -webkit-transition: width .4s;
+  transition: width .4s;
 }
 
 @media all and (min-width: 768px) {
   .site-header__logo {
-    max-width: 22rem;
+    width: 18rem;
   }
 }
 
@@ -1050,6 +1069,8 @@ a.button {
   width: 100%;
   height: auto;
   vertical-align: top;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .site-header__navigate > ul {
@@ -1291,6 +1312,13 @@ a.button {
   }
 }
 
+@media all and (min-width: 768px) and (min-width: 1024px) {
+  .promo-form__grid {
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+
 @media all and (min-width: 768px) and (min-width: 1379px) {
   .promo-form__grid {
     margin-right: -1.5rem;
@@ -1317,6 +1345,13 @@ a.button {
 }
 
 @media all and (min-width: 768px) and (min-width: 768px) {
+  .promo-form__jornal {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 1024px) {
   .promo-form__jornal {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -1356,6 +1391,13 @@ a.button {
 }
 
 @media all and (min-width: 768px) and (min-width: 768px) {
+  .promo-form__form-box {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 1024px) {
   .promo-form__form-box {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -1420,6 +1462,12 @@ a.button {
   }
 }
 
+@media all and (min-width: 768px) and (min-width: 1024px) {
+  .heroes-slider {
+    margin: 0 18rem;
+  }
+}
+
 @media all and (min-width: 768px) and (min-width: 1379px) {
   .heroes-slider {
     margin: 0 24rem;
@@ -1478,6 +1526,12 @@ a.button {
   margin-bottom: 4rem;
 }
 
+@media all and (min-width: 1024px) {
+  .heroes-slider-nav {
+    margin: 4rem 18rem;
+  }
+}
+
 @media all and (min-width: 1379px) {
   .heroes-slider-nav {
     margin: 4rem 24rem;
@@ -1485,7 +1539,7 @@ a.button {
 }
 
 .heroes-slider-nav .slick-slide {
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .heroes-slider-nav .slick-slide img {
@@ -1539,6 +1593,7 @@ a.button {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  outline: none !important;
 }
 
 @media all and (max-width: 767px) {
