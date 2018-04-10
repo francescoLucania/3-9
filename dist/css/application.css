@@ -1138,6 +1138,17 @@ a.button {
   background: #fff;
 }
 
+.section__header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media all and (min-width: 1379px) {
+  .section__header {
+    margin-bottom: 3rem;
+  }
+}
+
 .promo {
   position: relative;
   min-height: 70rem !important;

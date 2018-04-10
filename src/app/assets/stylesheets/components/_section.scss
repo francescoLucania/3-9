@@ -15,4 +15,13 @@
     &[data-bg-alt] {
         background: #fff;
     }
+
+    &__header {
+        margin-bottom: map-get($mq-indents, 'md');
+        text-align: center;
+
+        @include mq(lg) {
+            margin-bottom: map-get($mq-indents, 'lg');
+        }
+    }
 }
