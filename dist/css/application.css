@@ -31,8 +31,8 @@ body {
           flex-direction: column;
   min-height: 100vh;
   background: #fff;
-  color: #000;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #3b3b3b;
+  font-family: CoreSansDS35Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
 }
 
@@ -89,7 +89,7 @@ textarea {
 }
 
 h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: CoreSansDS35Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 6rem;
   line-height: 1;
   font-weight: 700;
@@ -101,7 +101,7 @@ h1 a {
 }
 
 h2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: CoreSansDS35Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 5rem;
   line-height: 1;
   font-weight: 700;
@@ -112,7 +112,7 @@ h2 a {
 }
 
 h3 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: CoreSansDS35Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 4rem;
   line-height: 1;
   font-weight: 700;
@@ -123,7 +123,7 @@ h3 a {
 }
 
 h4 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: CoreSansDS35Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 3rem;
   line-height: 1;
   font-weight: 700;
@@ -134,7 +134,7 @@ h4 a {
 }
 
 h5 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: CoreSansDS35Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 2rem;
   line-height: 1.25;
   font-weight: 700;
@@ -145,7 +145,7 @@ h5 a {
 }
 
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: CoreSansDS35Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
   line-height: 1.333;
   font-weight: 700;
@@ -208,9 +208,9 @@ table {
   max-height: 20rem;
   overflow-y: auto;
   background: #fff;
-  border-right: 1px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-right: 1px solid rgba(59, 59, 59, 0.4);
+  border-bottom: 1px solid rgba(59, 59, 59, 0.4);
+  border-left: 1px solid rgba(59, 59, 59, 0.4);
 }
 
 .ui-autocomplete .ui-menu-item-wrapper {
@@ -227,9 +227,9 @@ table {
   display: none;
   padding: .75rem 1rem 1rem;
   background: #fff;
-  border-right: 1px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-right: 1px solid rgba(59, 59, 59, 0.4);
+  border-bottom: 1px solid rgba(59, 59, 59, 0.4);
+  border-left: 1px solid rgba(59, 59, 59, 0.4);
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -257,7 +257,7 @@ table {
   display: block;
   border-top: .5rem solid transparent;
   border-bottom: .5rem solid transparent;
-  border-right: 0.75rem solid rgba(0, 0, 0, 0.6);
+  border-right: 0.75rem solid rgba(59, 59, 59, 0.6);
 }
 
 .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
@@ -284,7 +284,7 @@ table {
   display: block;
   border-top: .5rem solid transparent;
   border-bottom: .5rem solid transparent;
-  border-left: 0.75rem solid rgba(0, 0, 0, 0.6);
+  border-left: 0.75rem solid rgba(59, 59, 59, 0.6);
 }
 
 .ui-datepicker-calendar {
@@ -311,7 +311,7 @@ table {
 }
 
 .ui-datepicker-calendar tbody td.ui-datepicker-current-day .ui-state-default {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(59, 59, 59, 0.8);
   color: #fff;
 }
 
@@ -320,7 +320,7 @@ table {
   display: block;
   width: 100%;
   padding: .5rem 2.5rem .5rem .75rem;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(59, 59, 59, 0.4);
   cursor: default;
 }
 
@@ -334,7 +334,7 @@ table {
           transform: translateY(-50%);
   display: block;
   pointer-events: none;
-  border-top: 0.4rem solid rgba(0, 0, 0, 0.6);
+  border-top: 0.4rem solid rgba(59, 59, 59, 0.6);
   border-right: .4rem solid transparent;
   border-left: .4rem solid transparent;
 }
@@ -350,7 +350,7 @@ table {
 }
 
 .ui-selectmenu-button .ui-selectmenu-text.ui-state-placeholder {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(59, 59, 59, 0.6);
 }
 
 .ui-selectmenu-menu {
@@ -366,9 +366,9 @@ table {
 .ui-selectmenu-menu .ui-menu {
   max-height: calc(14.5rem + 1px);
   background: #fff;
-  border-right: 1px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-right: 1px solid rgba(59, 59, 59, 0.4);
+  border-bottom: 1px solid rgba(59, 59, 59, 0.4);
+  border-left: 1px solid rgba(59, 59, 59, 0.4);
   overflow: auto;
 }
 
@@ -387,7 +387,7 @@ table {
 .button {
   display: inline-block;
   padding: .5rem 1.5rem;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(59, 59, 59, 0.8);
   color: #fff;
   text-align: center;
 }
@@ -409,7 +409,7 @@ a.button {
   display: block;
   width: 100%;
   padding: .5rem .75rem;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(59, 59, 59, 0.4);
 }
 
 .input > input:disabled {
@@ -428,7 +428,7 @@ a.button {
   display: block;
   width: 100%;
   padding: .5rem 2.5rem .5rem .75rem;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(59, 59, 59, 0.4);
 }
 
 .select__tag + .select__arrow {
@@ -441,7 +441,7 @@ a.button {
           transform: translateY(-50%);
   display: block;
   pointer-events: none;
-  border-top: 0.4rem solid rgba(0, 0, 0, 0.6);
+  border-top: 0.4rem solid rgba(59, 59, 59, 0.6);
   border-right: .4rem solid transparent;
   border-left: .4rem solid transparent;
 }
@@ -458,7 +458,7 @@ a.button {
   display: block;
   width: 100%;
   padding: .5rem .75rem;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(59, 59, 59, 0.4);
 }
 
 .textarea > textarea:disabled {
@@ -495,7 +495,7 @@ a.button {
   left: 0;
   z-index: 1;
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(59, 59, 59, 0.4);
 }
 
 .checkbox__tag + .checkbox__box::after {
@@ -506,7 +506,7 @@ a.button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: #000;
+  background: #3b3b3b;
   content: "";
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -551,7 +551,7 @@ a.button {
   left: 0;
   z-index: 1;
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(59, 59, 59, 0.4);
   border-radius: 50%;
 }
 
@@ -563,7 +563,7 @@ a.button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: #000;
+  background: #3b3b3b;
   border-radius: 50%;
   content: "";
   -webkit-transition: all 0.2s;
@@ -612,39 +612,39 @@ a.button {
   margin-left: auto;
 }
 
-@media all and (max-device-width: 767px) {
+@media all and (max-width: 767px) {
   .container {
     max-width: 100%;
   }
 }
 
-@media all and (min-device-width: 768px) {
+@media all and (min-width: 768px) {
   .container {
     max-width: 100%;
   }
 }
 
-@media all and (min-device-width: 1025px) {
+@media all and (min-width: 1379px) {
   .container {
-    max-width: 1440px;
+    max-width: 1380px;
   }
 }
 
-@media all and (max-device-width: 767px) {
-  .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-}
-
-@media all and (min-device-width: 768px) {
+@media all and (max-width: 767px) {
   .container {
     padding-right: 2rem;
     padding-left: 2rem;
   }
 }
 
-@media all and (min-device-width: 1025px) {
+@media all and (min-width: 768px) {
+  .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media all and (min-width: 1379px) {
   .container {
     padding-right: 3rem;
     padding-left: 3rem;
@@ -717,8 +717,22 @@ a.button {
   line-height: normal;
 }
 
+@font-face {
+  src: url("../fonts/CoreSansDS35Regular.woff") format("woff");
+  font-family: CoreSansDS35Regular;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("../fonts/CoreSansDS75Black.woff") format("woff");
+  font-family: CoreSansDS35Regular;
+  font-style: italic;
+  font-weight: 700;
+}
+
 .icon {
-  fill: #000;
+  fill: #3b3b3b;
   fill-rule: evenodd;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
@@ -763,7 +777,7 @@ a.button {
 
 .wysiwyg > blockquote {
   padding-left: 4rem;
-  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: 1px solid rgba(59, 59, 59, 0.4);
 }
 
 .wysiwyg > blockquote:not(:first-child) {
@@ -801,7 +815,7 @@ a.button {
 
 .wysiwyg > figure > figcaption {
   margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(59, 59, 59, 0.6);
 }
 
 .wysiwyg > img:not(:first-child) {
@@ -892,7 +906,7 @@ a.button {
 }
 
 .wysiwyg__table > table caption {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(59, 59, 59, 0.6);
   text-align: right;
 }
 
@@ -941,4 +955,21 @@ a.button {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.promo {
+  position: relative;
+  min-height: 800px;
+  overflow: hidden;
+}
+
+.promo__item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 50% 0;
+  background-size: cover;
+  background-image: url(../img/promo.jpg);
 }

@@ -37,7 +37,8 @@
         "src/app/assets/javascripts/components/jquery_ui/widgets/selectmenu.babel.js",
         "src/app/assets/javascripts/components/fonts.babel.js",
         "src/app/assets/javascripts/components/icons.babel.js",
-        "src/app/assets/javascripts/components/wysiwyg.babel.js"
+        "src/app/assets/javascripts/components/wysiwyg.babel.js",
+        "src/app/assets/javascripts/components/promo.js"
       ],
       "watch": "src/app/assets/javascripts/**/*.js",
       "concat": "application.js",

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.promo {
+    position: relative;
+    min-height: 800px;
+    overflow: hidden;
+
+    &__item {
+        @include size(100%);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: {
+            position: 50% 0;
+            size: cover;
+            image: url(../img/promo.jpg);
+        };
+    }
+}
