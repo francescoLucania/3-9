@@ -957,6 +957,93 @@ a.button {
   left: 0;
 }
 
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 2rem;
+}
+
+@media all and (min-width: 1379px) {
+  .site-header {
+    padding: 3rem;
+  }
+}
+
+.site-header__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header__logo {
+  display: block;
+  max-width: 12rem;
+}
+
+@media all and (min-width: 768px) {
+  .site-header__logo {
+    max-width: 22rem;
+  }
+}
+
+.site-header__logo > img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.site-header__navigate > ul {
+  display: none;
+  list-style: none;
+}
+
+@media all and (min-width: 768px) {
+  .site-header__navigate > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.site-header__navigate > ul > li {
+  display: block;
+}
+
+.site-header__navigate > ul > li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+@media all and (min-width: 1379px) {
+  .site-header__navigate > ul > li:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+
+.site-header__navigate > ul > li > a {
+  display: block;
+  padding: 2rem;
+  letter-spacing: .2rem;
+  text-decoration: none;
+  color: rgba(59, 59, 59, 0.8);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/nav-item.svg);
+}
+
+.mod_no-touchevents .site-header__navigate > ul > li > a:hover, .mod_no-touchevents .site-header__navigate > ul > li > a.hover {
+  color: #4fca54;
+}
+
 .promo {
   position: relative;
   min-height: 800px;
@@ -972,4 +1059,50 @@ a.button {
   background-position: 50% 0;
   background-size: cover;
   background-image: url(../img/promo.jpg);
+}
+
+.promo__illustration {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.promo__illustration > img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.promo #illustration-1 {
+  left: 0;
+}
+
+@media all and (min-width: 1379px) {
+  .promo #illustration-1 {
+    width: 16vw;
+  }
+}
+
+.promo #illustration-2 {
+  right: 0;
+}
+
+@media all and (min-width: 1379px) {
+  .promo #illustration-2 {
+    width: 35vw;
+  }
+}
+
+.promo__after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.promo__after > img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
 }

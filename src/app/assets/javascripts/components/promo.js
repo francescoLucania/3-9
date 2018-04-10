@@ -1,6 +1,8 @@
 $(function() {
 
-    $('.js-promo').css('min-height', $(window).height());
+    function promoHeight() {
+        $('.js-promo').css('min-height', $(window).height());
+    }
 
     var parent = document.getElementsByClassName('js-promo')[0];
     var items = document.getElementsByClassName('js-promo-item');
@@ -16,4 +18,12 @@ $(function() {
                 Math.round((center.y - event.pageY) / 20) + 'px, 0) scale(1.1); ');
         }
     }
+
+    $(window).on('load', function () {
+        promoHeight()
+    });
+
+    $(window).smartresize(function () {
+        promoHeight()
+    });
 });

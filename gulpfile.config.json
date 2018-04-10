@@ -38,6 +38,8 @@
         "src/app/assets/javascripts/components/fonts.babel.js",
         "src/app/assets/javascripts/components/icons.babel.js",
         "src/app/assets/javascripts/components/wysiwyg.babel.js",
+        "src/app/assets/javascripts/components/utilities/scrollsize.js",
+        "src/app/assets/javascripts/components/utilities/smartresize.js",
         "src/app/assets/javascripts/components/promo.js"
       ],
       "watch": "src/app/assets/javascripts/**/*.js",

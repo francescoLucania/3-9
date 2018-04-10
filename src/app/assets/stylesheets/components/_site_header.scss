@@ -1,5 +1,74 @@
 @charset "UTF-8";
 
 .site-header {
-    // Styles
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: map-get($mq-indents, 'sm');
+
+    @include mq(lg) {
+        padding: map-get($mq-indents, 'lg');
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: block;
+        max-width: 12rem;
+
+        @include mq(md) {
+            max-width: 22rem;
+        }
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__navigate {
+        > ul {
+            display: none;
+            list-style: none;
+
+            @include mq(md) {
+                display: flex;
+            }
+
+            > li {
+                display: block;
+
+                &:not(:last-child) {
+                    margin-right: map-get($mq-indents, 'md');
+
+                    @include mq(lg) {
+                        margin-right: map-get($mq-indents, 'lg');
+                    }
+                }
+
+                > a {
+                    @include interact(color,$color-brand);
+                    display: block;
+                    padding: 2rem;
+                    letter-spacing: .2rem;
+                    text-decoration: none;
+                    color: $color-light;
+
+                    background: {
+                        position: 50% 50%;
+                        size: contain;
+                        repeat: no-repeat;
+                        image: url(../img/nav-item.svg);
+                    };
+                }
+            }
+        }
+    }
 }

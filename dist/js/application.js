@@ -243,9 +243,69 @@ if (enable.components.wysiwyg === true) {
 }
 'use strict';
 
+function scrollSize() {
+    var css = {
+        'width': '200px',
+        'height': '200px',
+        'margin': '0',
+        'padding': '0',
+        'border': 'none'
+    };
+
+    var inner = $('<div>').css($.extend({}, css));
+    var outer = $('<div>').css($.extend({
+        'position': 'absolute',
+        'top': '-1000px',
+        'left': '-1000px',
+        'overflow': 'scroll'
+    }, css)).append(inner).appendTo('body').scrollTop(1000).scrollLeft(1000);
+
+    var scrollSize = {
+        'width': outer.offset().left - inner.offset().left || 0,
+        'height': outer.offset().top - inner.offset().top || 0
+    };
+
+    outer.remove();
+
+    return scrollSize;
+}
+'use strict';
+
+// Debounced Resize() jQuery Plugin
+// https://www.paulirish.com/2009/throttled-smartresize-jquery-event-handler/
+(function ($, sr) {
+    // debouncing function from John Hann
+    // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+    var debounce = function debounce(func, threshold, execAsap) {
+        var timeout;
+
+        return function debounced() {
+            var obj = this,
+                args = arguments;
+
+            function delayed() {
+                if (!execAsap) func.apply(obj, args);
+                timeout = null;
+            }
+
+            if (timeout) clearTimeout(timeout);else if (execAsap) func.apply(obj, args);
+
+            timeout = setTimeout(delayed, threshold || 100);
+        };
+    };
+
+    // smartresize
+    jQuery.fn[sr] = function (fn) {
+        return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
+    };
+})(jQuery, 'smartresize');
+'use strict';
+
 $(function () {
 
-    $('.js-promo').css('min-height', $(window).height());
+    function promoHeight() {
+        $('.js-promo').css('min-height', $(window).height());
+    }
 
     var parent = document.getElementsByClassName('js-promo')[0];
     var items = document.getElementsByClassName('js-promo-item');
@@ -259,4 +319,12 @@ $(function () {
             items[i].setAttribute('style', 'transform: translate3d(' + Math.round((center.x - event.pageX) / 20) + 'px, ' + Math.round((center.y - event.pageY) / 20) + 'px, 0) scale(1.1); ');
         }
     };
+
+    $(window).on('load', function () {
+        promoHeight();
+    });
+
+    $(window).smartresize(function () {
+        promoHeight();
+    });
 });

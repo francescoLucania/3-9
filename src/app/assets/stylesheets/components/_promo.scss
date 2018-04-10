@@ -17,4 +17,46 @@
             image: url(../img/promo.jpg);
         };
     }
+
+    &__illustration {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    #illustration-1 {
+        left: 0;
+
+        @include mq(lg) {
+            width: 16vw;
+        }
+    }
+
+    #illustration-2 {
+        right: 0;
+
+        @include mq(lg) {
+            width: 35vw;
+        }
+    }
+
+    &__after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
 }
