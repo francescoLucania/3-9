@@ -2,7 +2,7 @@
 
 .promo {
     position: relative;
-    min-height: 800px;
+    min-height: 70rem !important;
     overflow: hidden;
 
     &__item {
@@ -22,6 +22,11 @@
         position: absolute;
         bottom: 0;
         z-index: 2;
+        display: none;
+
+        @include mq(md) {
+            display: block;
+        }
 
         > img {
             width: 100%;
@@ -33,7 +38,7 @@
     #illustration-1 {
         left: 0;
 
-        @include mq(lg) {
+        @include mq(md) {
             width: 16vw;
         }
     }
@@ -41,8 +46,50 @@
     #illustration-2 {
         right: 0;
 
-        @include mq(lg) {
+        @include mq(md) {
             width: 35vw;
+        }
+    }
+
+    #illustration-3 {
+
+    }
+
+    &__before {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        height: 600px;
+        text-align: center;
+        color: #fff;
+        background: {
+            position: 50% 0;
+            repeat: no-repeat;
+            size: contain;
+            image: url(../img/elips.png);
+        };
+
+        @include mq(md) {
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20% 30% 4%;
+        }
+
+        @include mq(lg) {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            padding: 10% 5% 4%;
+        }
+
+        > h1 {
+            white-space: nowrap;
+        }
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
         }
     }
 

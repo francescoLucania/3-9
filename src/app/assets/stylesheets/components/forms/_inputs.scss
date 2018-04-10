@@ -5,8 +5,20 @@
         > input {
             display: block;
             width: 100%;
-            padding: .5rem .75rem;
-            border: 1px solid $color-lightest;
+            padding: 1.3rem 1.8rem;
+            border: 3px solid $color-brand;
+            border-radius: .5rem;
+            background: #fff;
+            outline: none !important;
+            font-family: $font-family-title;
+
+            &::placeholder {
+                color: $color-lightest;
+            }
+
+            &:focus {
+                border-color: rgba($color-brand, .7);
+            }
 
             &:disabled {
                 opacity: .2;
@@ -22,8 +34,20 @@
         }
 
         &.input--invalid {
+            position: relative;
+
             > input {
                 border-color: $color-error;
+            }
+
+            &::after {
+                @include text-sm;
+                position: absolute;
+                left: 0;
+                bottom: 0rem;
+                transform: translateY(100%);
+                color: $color-error;
+                content: attr(data-error);
             }
         }
     }

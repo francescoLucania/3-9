@@ -1,7 +1,7 @@
 $(function() {
 
     function promoHeight() {
-        $('.js-promo').css('min-height', $(window).height());
+        $('.js-promo').css('height', $(window).height());
     }
 
     var parent = document.getElementsByClassName('js-promo')[0];

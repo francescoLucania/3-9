@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+.promo-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: map-get($mq-indents, 'sm');
+    background: $color-body;
+    width: calc(100% - 4rem);
+    transform: translate(-50%,-50%);
+
+    @include mq(md) {
+        width: 60%;
+        padding: map-get($mq-indents, 'md');
+    }
+
+    @include mq(lg) {
+        transform: translate(-70%,-50%);
+        padding: map-get($mq-indents, 'lg');
+        width: 40%;
+        min-width: 65rem;
+    }
+
+    &__grid {
+        @include mq(md) {
+            @include grid;
+        }
+    }
+
+    &__jornal {
+        display: none;
+
+        @include mq(md) {
+            @include grid-col;
+            @include col-size(2.2/4);
+
+            display: block;
+        }
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__form-box {
+        padding: 2rem 0;
+        display: block;
+        font-family: $font-family-title;
+
+        @include mq(md) {
+            @include grid-col;
+            @include col-size(1.8/4);
+        }
+
+        > h1 {
+            @include h3;
+            margin-bottom: 2rem;
+        }
+
+        > form {
+            margin-top: 2rem;
+            padding: 2rem;
+            border-radius: .5rem;
+            background: #fff;
+
+            > .input{
+                &:not(:last-child) {
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+    }
+}
+

@@ -7,7 +7,8 @@
     },
     "vendorStyles": {
       "src": [
-        "node_modules/normalize.css/normalize.css"
+        "node_modules/normalize.css/normalize.css",
+        "node_modules/slick-carousel/slick/slick.css"
       ],
       "concat": "vendor.css",
       "dest": "dist/css/"
@@ -22,7 +23,8 @@
         "node_modules/jquery/dist/jquery.js",
         "node_modules/jquery-ui-dist/jquery-ui.js",
         "node_modules/fontfaceobserver/fontfaceobserver.js",
-        "node_modules/svg4everybody/dist/svg4everybody.js"
+        "node_modules/svg4everybody/dist/svg4everybody.js",
+        "node_modules/slick-carousel/slick/slick.js"
       ],
       "concat": "vendor.js",
       "dest": "dist/js/"
@@ -40,6 +42,7 @@
         "src/app/assets/javascripts/components/wysiwyg.babel.js",
         "src/app/assets/javascripts/components/utilities/scrollsize.js",
         "src/app/assets/javascripts/components/utilities/smartresize.js",
+        "src/app/assets/javascripts/components/heroes-slider.js",
         "src/app/assets/javascripts/components/promo.js"
       ],
       "watch": "src/app/assets/javascripts/**/*.js",

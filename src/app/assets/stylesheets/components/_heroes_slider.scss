@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+.heroes-slider {
+    @include mq(sm) {
+        padding: map-get($mq-indents, 'sm');
+        background: #fff;
+        border-radius: .5rem;
+    }
+
+    @include mq(md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 65rem;
+        background: {
+            position: 50% 50%;
+            size: contain;
+            repeat: no-repeat;
+            image: url(../img/slider-bg.png);
+        };
+
+        @include mq(lg) {
+            margin: 0 24rem;
+        }
+    }
+
+    &__box {
+        .slick-track {
+            @include mq(md) {
+                display: flex !important;
+                align-items: center;
+            }
+        }
+    }
+
+
+
+    &__item {
+        @include mq(md) {
+            display: flex !important; // slick overrides
+            align-items: center;
+        }
+    }
+
+    &__item-image {
+
+        @include mq(md) {
+            padding-left: 5rem;
+            width: 45%;
+        }
+
+        > img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__item-content {
+        @include mq(sm) {
+            margin-top: 3rem;
+        }
+
+        @include mq(md) {
+            width: 55%;
+            padding-right: 8rem;
+        }
+    }
+}
+
+.heroes-slider-nav {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    @include mq(lg) {
+        margin: 4rem 24rem;
+    }
+
+    .slick-slide {
+        margin: 0 2rem;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -6rem;
+        display: flex;
+        justify-content: center;
+
+        > li {
+            @include size(1.6rem);
+
+            position: relative;
+            background: $color-brand;
+            border-radius: 50%;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            > button {
+                font-size: 0;
+            }
+
+            &.slick-active {
+
+                > button {
+                    @include size(.6rem);
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    border-radius: 50%;
+                    background: #fff;
+                }
+            }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include mq(sm) {
+            display: none !important; // overrides
+        }
+
+        > img {
+            vertical-align: top;
+        }
+
+        &.slick-prev {
+            left: -9rem;
+        }
+
+        &.slick-next {
+            right: -9rem;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+}

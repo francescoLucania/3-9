@@ -2,11 +2,15 @@
 
 @if $enable-buttons == true {
     .button {
+        @include interact(background,$color-brand-alt);
+
         display: inline-block;
-        padding: .5rem 1.5rem;
-        background: $color-light;
+        padding: 1.3rem 1.8rem;
+        border-radius: .5rem;
+        background: $color-brand;
         color: #fff;
         text-align: center;
+        transition: $transition-duration-base;
 
         @at-root a#{&} {
             text-decoration: none;
@@ -14,6 +18,10 @@
 
         &:disabled {
             opacity: .2;
+        }
+
+        &--alternative {
+            background: $color-base;
         }
 
         &.button--block {
