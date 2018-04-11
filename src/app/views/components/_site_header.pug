@@ -2,14 +2,34 @@ header.site-header.js-site-header
     .site-header__grid
         a.site-header__logo
             img(src="img/logo.png" alt="Царство-дети")
-        nav.site-header__navigate
+        nav.site-header__navigate.js-navigate
             ul
 
                 li
-                    a(href='#') Персонажи
+                    a(href='#heroes') Персонажи
 
                 li
-                    a(href='#') Подписка
+                    a(href='#subscribe') Подписка
 
                 li
-                    a(href='#') Отзывы
+                    a(href='#reviews') Отзывы
+
+        button.site-header__burger.js-open-menu
+            span
+
+    nav.mobile-menu.js-navigate
+        ul
+
+            li
+                a(href='#heroes') Персонажи
+
+            li
+                a(href='#subscribe') Подписка
+
+            li
+                a(href='#reviews') Отзывы
+
+        .mobile-menu__footer
+            include _social_link
+
+

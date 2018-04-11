@@ -1,0 +1,32 @@
+.promo.js-promo
+    .promo__item.js-promo-item
+
+
+    .promo__illustration#illustration-1
+        img(src="img/i1.png" alt="")
+
+    .promo__illustration#illustration-2
+        img(src="img/palac.png" alt="")
+
+    .promo__after
+        img(src="img/screen_second-border.png" alt="")
+
+    .promo-form
+        .promo-form__grid
+            .promo-form__jornal
+                img(src="img/jornal.jpg")
+
+            .promo-form__form-box
+
+                h1 Специальное предложение!
+                p Подпишитесь прямо сейчас и получите первый журнал бесплатно
+
+                form
+                    .input
+                        input(type="text" placeholder="Имя")
+
+                    .input.input--invalid(data-error="Заполните поле")
+                        input(type="email" placeholder="Почта")
+
+                    .input
+                        button.button.button--alternative.button--block Оформить подписку

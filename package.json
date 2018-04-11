@@ -28,7 +28,9 @@
     "stylelint-config-standard": "^18.0.0"
   },
   "dependencies": {
+    "@mdi/font": "^2.2.43",
     "fontfaceobserver": "^2.0.13",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.2.1",
     "jquery-ui-dist": "^1.12.1",
     "modernizr": "^3.5.0",

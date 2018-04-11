@@ -1,3 +1,19 @@
 footer.site-footer
-    //script.
-        document.write(new Date().getFullYear());
+    .container
+        .site-footer__before
+            img(src="img/footer.png" alt="footer")
+
+        .site-footer__image
+            img(src="img/footer-cat.png" alt="footer")
+
+        .site-footer__content-box
+            .site-footer__grid
+
+                .site-footer__col
+                    .site-footer__content
+                        h5 "3/9 ЦАРСТВО"
+                        p Детский развивающий журнал
+
+                .site-footer__col
+
+                    include _social_link

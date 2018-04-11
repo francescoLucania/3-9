@@ -16,14 +16,30 @@
   <body>
     <header class="site-header js-site-header">
       <div class="site-header__grid"><a class="site-header__logo"><img src="img/logo.png" alt="Царство-дети"></a>
-        <nav class="site-header__navigate">
+        <nav class="site-header__navigate js-navigate">
           <ul>
-            <li><a href="#">Персонажи</a></li>
-            <li><a href="#">Подписка</a></li>
-            <li><a href="#">Отзывы</a></li>
+            <li><a href="#heroes">Персонажи</a></li>
+            <li><a href="#subscribe">Подписка</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
           </ul>
         </nav>
+        <button class="site-header__burger js-open-menu"><span></span></button>
       </div>
+      <nav class="mobile-menu js-navigate">
+        <ul>
+          <li><a href="#heroes">Персонажи</a></li>
+          <li><a href="#subscribe">Подписка</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <ul class="social-links">
+            <li><a href="" targe="_blank"><i class="mdi mdi-vk"></i></a></li>
+            <li><a href="" targe="_blank"><i class="mdi mdi-odnoklassniki"></i></a></li>
+            <li><a href="" targe="_blank"><i class="mdi mdi-instagram"></i></a></li>
+            <li><a href="" targe="_blank"><i class="mdi mdi-facebook"></i></a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <div class="promo js-promo">
@@ -52,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div class="section" id="heroes">
         <div class="container">
           <div class="section__header">
             <h2>Персонажи</h2>
@@ -81,14 +97,14 @@
                 </div>
               </div>
               <div class="heroes-slider__item">
-                <div class="heroes-slider__item-image"><img src="img/heroes/char4_photo.png" alt=""></div>
+                <div class="heroes-slider__item-image"><img src="img/heroes/char5_photo.png" alt=""></div>
                 <div class="heroes-slider__item-content wysiwyg">
                   <h4>Данила-мастер</h4>
                   <p>Сообразительный Данила-мастер может сделать что угодно — хоть скрипку, хоть телефон, хоть робота. И хотя Данила частенько подшучивает над Иваном, на самом деле они друзья не разлей вода. Даниле никогда не бывает скучно, ведь он постоянно занят делом: что-то мастерит или изобретает. Благодаря инженерной мысли Данилы-мастера жители 3/9 царства даже побывали в космосе!</p>
                 </div>
               </div>
               <div class="heroes-slider__item">
-                <div class="heroes-slider__item-image"><img src="img/heroes/char5_photo.png" alt=""></div>
+                <div class="heroes-slider__item-image"><img src="img/heroes/char4_photo.png" alt=""></div>
                 <div class="heroes-slider__item-content wysiwyg">
                   <h4>Бабай</h4>
                   <p>Безобидный и безопасный злодей. Руководит Чёрным воинством и играет в паровозики.</p>
@@ -185,10 +201,202 @@
           </div>
         </div>
       </div>
+      <div class="section" id="subscribe" data-bg-alt>
+        <div class="container">
+          <div class="section__header">
+            <h2>Преимущества подписки:</h2>
+          </div>
+          <div class="subscribe">
+            <ul class="subscribe__list">
+              <li data-number="1"><span>Не нужно искать журнал в&nbsp;магазинах</span></li>
+              <li data-number="2"><span>Доставка до&nbsp;почтового ящика</span></li>
+              <li data-number="3"><span>Дешевле чем в магазине</span></li>
+              <li data-number="4"><span>Бесплатная доставка 2&nbsp;раза в месяц</span></li>
+            </ul>
+          </div>
+          <div class="section__footer"><a class="button button--alternative" href="#" data-size="large">Подписаться</a></div>
+        </div>
+      </div>
+      <div class="section" id="reviews">
+        <div class="container">
+          <div class="section__header">
+            <h2>Отзывы о журнале</h2>
+          </div>
+          <div class="reviews">
+            <div class="reviews__grid js-reviews">
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Иван Белялетдинов</h6>
+                  </header>
+                  <p>Здравствуйте! Сегодня мой отзыв на заказ Сын попросил написать его для тех детей и мам, которые не знают о его любимом журнале "39 Царство". Обратила я на него внимание в магазине совсем недавно и с тех пор мы с нетерпением ждем новый выпуск. Стоимость номера всего лишь 32 рубля 90 копеек .</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p> Обратила я на него внимание в магазине совсем недавно и с тех пор мы с нетерпением ждем новый выпуск. Стоимость номера всего лишь 32 рубля 90 копеек .</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Здравствуйте! Сегодня мой отзыв на заказ Сын попросил написать его для тех детей и мам, которые не знают о его любимом журнале "39 Царство". Обратила я на него внимание в магазине совсем недавно и с тех пор мы с нетерпением ждем новый выпуск. Стоимость номера всего лишь 32 рубля 90 копеек .</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Покупала сестре на день рождения. Как она была довольна, это не описать словами. Прыгала, визжала: "Ура, ура, мама, будешь теперь мне читать по две сказки на ночь". И ребёнок занят, и маме хорошо, и я любимая сестра.</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Пошли мы с племянником в очередной раз в магазин за нашими любимыми детскими журналами "Ежик" и "Непоседа" и среди кучи журналов с иностранными раскрученными героями мне на глаза попался журнал со сказочным названием "39 царство".</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Здравствуйте! Сегодня мой отзыв на заказ Сын попросил написать его для тех детей и мам, которые не знают о его любимом журнале "39 Царство". Обратила я на него внимание в магазине совсем недавно и с тех пор мы с нетерпением ждем новый выпуск. Стоимость номера всего лишь 32 рубля 90 копеек .</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Ирина Сычева</h6>
+                  </header>
+                  <p>Объясните мне от чего подорожал журнал в два раза? У нас что буквы стали завозить из Европы или для журнала используется древесина девственных лесов Амазонии.</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Пошли мы с племянником в очередной раз в магазин за нашими любимыми детскими журналами "Ежик" и "Непоседа" и среди кучи журналов с иностранными раскрученными героями мне на глаза попался журнал со сказочным названием "39 царство".</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Здравствуйте! Сегодня мой отзыв на заказ Сын попросил написать его для тех детей и мам, которые не знают о его любимом журнале "39 Царство". Обратила я на него внимание в магазине совсем недавно и с тех пор мы с нетерпением ждем новый выпуск. Стоимость номера всего лишь 32 рубля 90 копеек .</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p> Обратила я на него внимание в магазине совсем недавно и с тех пор мы с нетерпением ждем новый выпуск. Стоимость номера всего лишь 32 рубля 90 копеек .</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Здравствуйте! Сегодня мой отзыв на заказ Сын попросил написать его для тех детей и мам, которые не знают о его любимом журнале "39 Царство". Обратила я на него внимание в магазине совсем недавно и с тех пор мы с нетерпением ждем новый выпуск. Стоимость номера всего лишь 32 рубля 90 копеек .</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Покупала сестре на день рождения. Как она была довольна, это не описать словами. Прыгала, визжала: "Ура, ура, мама, будешь теперь мне читать по две сказки на ночь". И ребёнок занят, и маме хорошо, и я любимая сестра.</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Пошли мы с племянником в очередной раз в магазин за нашими любимыми детскими журналами "Ежик" и "Непоседа" и среди кучи журналов с иностранными раскрученными героями мне на глаза попался журнал со сказочным названием "39 царство".</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Здравствуйте! Сегодня мой отзыв на заказ Сын попросил написать его для тех детей и мам, которые не знают о его любимом журнале "39 Царство". Обратила я на него внимание в магазине совсем недавно и с тех пор мы с нетерпением ждем новый выпуск. Стоимость номера всего лишь 32 рубля 90 копеек .</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Ирина Сычева</h6>
+                  </header>
+                  <p>Объясните мне от чего подорожал журнал в два раза? У нас что буквы стали завозить из Европы или для журнала используется древесина девственных лесов Амазонии.</p>
+                </article>
+              </div>
+              <div class="reviews__col">
+                <article>
+                  <header class="reviews__user">
+                    <div class="reviews__user-photo"><img src="img/photo.jpg" alt="name author"></div>
+                    <h6>Дарья Иванова</h6>
+                  </header>
+                  <p>Пошли мы с племянником в очередной раз в магазин за нашими любимыми детскими журналами "Ежик" и "Непоседа" и среди кучи журналов с иностранными раскрученными героями мне на глаза попался журнал со сказочным названием "39 царство".</p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="section__footer"><a class="button button--alternative" href="#" data-size="large">Оставить отзыв</a></div>
+        </div>
+      </div>
     </main>
     <footer class="site-footer">
-      <!--script.document.write(new Date().getFullYear());
-      -->
+      <div class="container">
+        <div class="site-footer__before"><img src="img/footer.png" alt="footer"></div>
+        <div class="site-footer__image"><img src="img/footer-cat.png" alt="footer"></div>
+        <div class="site-footer__content-box">
+          <div class="site-footer__grid">
+            <div class="site-footer__col">
+              <div class="site-footer__content">
+                <h5>"3/9 ЦАРСТВО"</h5>
+                <p>Детский развивающий журнал</p>
+              </div>
+            </div>
+            <div class="site-footer__col">
+              <ul class="social-links">
+                <li><a href="" targe="_blank"><i class="mdi mdi-vk"></i></a></li>
+                <li><a href="" targe="_blank"><i class="mdi mdi-odnoklassniki"></i></a></li>
+                <li><a href="" targe="_blank"><i class="mdi mdi-instagram"></i></a></li>
+                <li><a href="" targe="_blank"><i class="mdi mdi-facebook"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js/vendor.js"></script>
     <script src="js/application.js"></script>

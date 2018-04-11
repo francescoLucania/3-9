@@ -54,6 +54,11 @@
         > img {
             display: block;
             margin: 0 auto;
+
+            @include mq(sm) {
+                width: auto;
+                max-height: 20rem;
+            }
         }
     }
 

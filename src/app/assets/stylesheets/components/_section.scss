@@ -5,11 +5,11 @@
     background: #fff5e3;
 
     @include mq(md) {
-        padding: 4rem 0;
+        padding: 10rem 0;
     }
 
     @include mq(lg) {
-        padding: 6rem 0;
+        padding: 12rem 0;
     }
 
     &[data-bg-alt] {
@@ -17,11 +17,16 @@
     }
 
     &__header {
-        margin-bottom: map-get($mq-indents, 'md');
+        margin-bottom: 4rem;
         text-align: center;
 
         @include mq(lg) {
-            margin-bottom: map-get($mq-indents, 'lg');
+            margin-bottom: 6rem;
         }
+    }
+
+    &__footer {
+        margin-top: 6rem;
+        text-align: center;
     }
 }

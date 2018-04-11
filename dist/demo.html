@@ -16,14 +16,30 @@
   <body>
     <header class="site-header js-site-header">
       <div class="site-header__grid"><a class="site-header__logo"><img src="img/logo.png" alt="Царство-дети"></a>
-        <nav class="site-header__navigate">
+        <nav class="site-header__navigate js-navigate">
           <ul>
-            <li><a href="#">Персонажи</a></li>
-            <li><a href="#">Подписка</a></li>
-            <li><a href="#">Отзывы</a></li>
+            <li><a href="#heroes">Персонажи</a></li>
+            <li><a href="#subscribe">Подписка</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
           </ul>
         </nav>
+        <button class="site-header__burger js-open-menu"><span></span></button>
       </div>
+      <nav class="mobile-menu js-navigate">
+        <ul>
+          <li><a href="#heroes">Персонажи</a></li>
+          <li><a href="#subscribe">Подписка</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <ul class="social-links">
+            <li><a href="" targe="_blank"><i class="mdi mdi-vk"></i></a></li>
+            <li><a href="" targe="_blank"><i class="mdi mdi-odnoklassniki"></i></a></li>
+            <li><a href="" targe="_blank"><i class="mdi mdi-instagram"></i></a></li>
+            <li><a href="" targe="_blank"><i class="mdi mdi-facebook"></i></a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <div class="container"><br><br><br>
@@ -320,8 +336,28 @@
       </div>
     </main>
     <footer class="site-footer">
-      <!--script.document.write(new Date().getFullYear());
-      -->
+      <div class="container">
+        <div class="site-footer__before"><img src="img/footer.png" alt="footer"></div>
+        <div class="site-footer__image"><img src="img/footer-cat.png" alt="footer"></div>
+        <div class="site-footer__content-box">
+          <div class="site-footer__grid">
+            <div class="site-footer__col">
+              <div class="site-footer__content">
+                <h5>"3/9 ЦАРСТВО"</h5>
+                <p>Детский развивающий журнал</p>
+              </div>
+            </div>
+            <div class="site-footer__col">
+              <ul class="social-links">
+                <li><a href="" targe="_blank"><i class="mdi mdi-vk"></i></a></li>
+                <li><a href="" targe="_blank"><i class="mdi mdi-odnoklassniki"></i></a></li>
+                <li><a href="" targe="_blank"><i class="mdi mdi-instagram"></i></a></li>
+                <li><a href="" targe="_blank"><i class="mdi mdi-facebook"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js/vendor.js"></script>
     <script src="js/application.js"></script>

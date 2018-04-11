@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@mdi/font@^2.2.43":
+  version "2.2.43"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-2.2.43.tgz#087abe87be1f32e90fc07425779a7a30d1cc51ed"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -1998,6 +2002,10 @@ depd@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.1.tgz#5783b4e1c459f06fa5ca27f991f3d06e7a310359"
 
+desandro-matches-selector@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz#717beed4dc13e7d8f3762f707a6d58a6774218e1"
+
 destroy@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
@@ -2359,6 +2367,10 @@ etag@~1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.7.0.tgz#03d30b5f67dd6e632d2945d30d6652731a34d5d8"
 
+ev-emitter@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
+
 event-stream@^3.3.2:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
@@ -2679,6 +2691,12 @@ first-chunk-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/first-chunk-stream/-/first-chunk-stream-1.0.0.tgz#59bfb50cd905f60d7c394cd3d9acaab4e6ad934e"
 
+fizzy-ui-utils@^2.0.0, fizzy-ui-utils@^2.0.4:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz#7df45dcc4eb374a08b65d39bb9a4beedf7330505"
+  dependencies:
+    desandro-matches-selector "^2.0.0"
+
 flagged-respawn@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-1.0.0.tgz#4e79ae9b2eb38bf86b3bb56bf3e0a56aa5fcabd7"
@@ -2861,6 +2879,10 @@ get-proxy@^1.0.1:
   resolved "https://registry.yarnpkg.com/get-proxy/-/get-proxy-1.1.0.tgz#894854491bc591b0f147d7ae570f5c678b7256eb"
   dependencies:
     rc "^1.1.2"
+
+get-size@^2.0.0, get-size@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
 
 get-stdin@^4.0.1:
   version "4.0.1"
@@ -4156,6 +4178,16 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
+isotope-layout@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/isotope-layout/-/isotope-layout-3.0.6.tgz#d5636ec74d68e7e88fa5166fe6396858db00f432"
+  dependencies:
+    desandro-matches-selector "^2.0.0"
+    fizzy-ui-utils "^2.0.4"
+    get-size "^2.0.0"
+    masonry-layout "^4.1.0"
+    outlayer "^2.1.0"
+
 isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -4604,6 +4636,13 @@ markdown-escapes@^1.0.0:
 markdown-table@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.1.tgz#4b3dd3a133d1518b8ef0dbc709bf2a1b4824bc8c"
+
+masonry-layout@^4.1.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/masonry-layout/-/masonry-layout-4.2.1.tgz#1c878b85a88866ba6b39b9bd0e162348aed7ce13"
+  dependencies:
+    get-size "^2.0.2"
+    outlayer "^2.1.0"
 
 matchdep@^2.0.0:
   version "2.0.0"
@@ -5241,6 +5280,14 @@ osenv@0, osenv@^0.1.4:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
+
+outlayer@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/outlayer/-/outlayer-2.1.1.tgz#29863b6de10ea5dadfffcadfa0d728907387e9a2"
+  dependencies:
+    ev-emitter "^1.0.0"
+    fizzy-ui-utils "^2.0.0"
+    get-size "^2.0.2"
 
 output-file-sync@^1.1.2:
   version "1.1.2"

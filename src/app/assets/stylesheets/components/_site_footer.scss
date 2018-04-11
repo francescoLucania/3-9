@@ -1,5 +1,93 @@
 @charset "UTF-8";
 
 .site-footer {
-    // Styles
+    position: relative;
+    padding: 4rem 0;
+    background: #f5f5f5;
+
+    @include mq(md) {
+        padding: 8rem 0;
+    }
+
+    &__before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(-100%);
+
+        @include mq(sm) {
+            display: none;
+        }
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__content-box {
+
+        @include mq(md) {
+            margin-left: 32rem;
+        }
+
+        @include mq(lg) {
+            margin-left: 28rem;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @include mq(sm) {
+            display: none;
+        }
+
+        @include mq(md) {
+            width: 32rem;
+        }
+
+        @include mq(lg) {
+            width: 48rem;
+        }
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__grid {
+
+        @include mq(sm) {
+            text-align: center;
+        }
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__col {
+        @include mq(sm) {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            > .social-links {
+                margin: 0 auto;
+            }
+        }
+        @include mq(md) {
+            &:not(:last-child) {
+                margin-right: 4rem;
+            }
+        }
+    }
 }

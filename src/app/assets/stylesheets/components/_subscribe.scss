@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.subscribe {
+
+    &__list {
+        @include font(2.6rem,3.2rem);
+        margin-top: 6rem;
+        font-family: $font-family-title;
+
+        @include mq(md) {
+            @include grid;
+        }
+
+        @include mq(lg) {
+            margin: 8rem 5rem 0;
+        }
+
+        > li {
+            position: relative;
+            text-align: center;
+
+            @include mq(sm) {
+                &:not(:last-child) {
+                    margin-bottom: 4rem;
+                }
+            }
+
+            @include mq(md) {
+                @include grid-col;
+                @include col-size(1/4);
+                padding-left: 7rem;
+
+                &::before {
+                    @include size(5.5rem);
+                    @include font(4.6rem,4.6rem);
+                }
+            }
+
+
+            &::before {
+                @include size(10rem);
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2rem;
+                border-radius: 50%;
+                background: $color-brand;
+                color: #fff;
+                content: attr(data-number);
+            }
+
+            > span {
+                position: relative;
+                display: block;
+            }
+        }
+
+    }
+}

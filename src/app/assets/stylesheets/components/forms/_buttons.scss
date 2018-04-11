@@ -11,9 +11,14 @@
         color: #fff;
         text-align: center;
         transition: $transition-duration-base;
+        font-family: $font-family-title;
 
         @at-root a#{&} {
             text-decoration: none;
+        }
+
+        &[data-size="large"] {
+            @include font(2.4rem,2.4rem);
         }
 
         &:disabled {

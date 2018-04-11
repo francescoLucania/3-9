@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.mobile-menu {
+    @include size(100%);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    padding: 8rem map-get($mq-indents, 'sm') 2rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    transition: transform $transition-duration-base;
+
+    &.is-active {
+        transform: translateX(0);
+    }
+
+    > ul {
+        margin-top: 6rem;
+        text-align: center;
+        > li {
+            @include font(2.4rem);
+            display: block;
+            font-family: $font-family-title;
+
+            &:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+
+            > a {
+                color: $color-brand;
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: auto;
+    }
+}

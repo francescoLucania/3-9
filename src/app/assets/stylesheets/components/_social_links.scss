@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.social-links {
+    display: flex;
+    justify-content: center;
+
+    > li {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+
+        > a {
+            @include size(3.5rem);
+            @include interact(color,#fff);
+            @include interact(background,$color-base);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #fff;
+            color: $color-brand;
+
+            > i {
+                @include font(1.8rem,1.8rem);
+            }
+        }
+    }
+}
