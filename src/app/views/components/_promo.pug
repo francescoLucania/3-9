@@ -12,21 +12,20 @@
         img(src="img/screen_second-border.png" alt="")
 
     .promo-form
-        .promo-form__grid
-            .promo-form__jornal
-                img(src="img/jornal.jpg")
+        img(src="img/illustration.png" alt="")
 
-            .promo-form__form-box
+        .promo-form__form-body
+            img(src="img/canvas.png" alt="")
 
-                h1 Специальное предложение!
-                p Подпишитесь прямо сейчас и получите первый журнал бесплатно
+            .promo-form__form
 
-                form
-                    .input
-                        input(type="text" placeholder="Имя")
+                .promo-form__input-block
+                    img(src="img/input.png" alt="")
+                    input(type="email" placeholder="ФИО")
 
-                    .input.input--invalid(data-error="Заполните поле")
-                        input(type="email" placeholder="Почта")
+                .promo-form__input-block
+                    img(src="img/input.png" alt="")
+                    input(type="email" placeholder="e-mail")
 
-                    .input
-                        button.button.button--alternative.button--block Оформить подписку
+                button
+                    img(src="img/btn.png")

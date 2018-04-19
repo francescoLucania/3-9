@@ -138,10 +138,11 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        display: none !important; // overrides
         outline: none !important; // overrides
 
-        @include mq(sm) {
-            display: none !important; // overrides
+        @include mq(lg) {
+            display: block !important; // overrides
         }
 
         > img {
