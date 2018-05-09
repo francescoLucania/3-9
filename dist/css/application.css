@@ -1814,6 +1814,12 @@ a.button {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    margin: 6rem 0 -3rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1847,7 +1853,7 @@ a.button {
 
 @media all and (min-width: 1379px) {
   .subscribe__list {
-    margin: 8rem 5rem 0;
+    margin: 8rem 0 0;
   }
 }
 
@@ -1864,8 +1870,8 @@ a.button {
 
 @media all and (min-width: 768px) {
   .subscribe__list > li {
-    width: 25%;
-    padding-left: 7rem;
+    width: 33.333%;
+    margin-bottom: 3rem;
   }
 }
 
@@ -1897,32 +1903,18 @@ a.button {
   }
 }
 
-@media all and (min-width: 768px) {
-  .subscribe__list > li::before {
-    width: 5.5rem;
-    height: 5.5rem;
-    font-size: 4.6rem;
-    line-height: 1;
+@media all and (min-width: 1024px) {
+  .subscribe__list > li {
+    width: 20%;
+    margin-bottom: 0;
   }
 }
 
-.subscribe__list > li::before {
-  width: 10rem;
-  height: 10rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2rem;
-  border-radius: 50%;
-  background: #4fca54;
-  color: #fff;
-  content: attr(data-number);
+.subscribe__list > li > img {
+  margin-bottom: 3rem;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 
 .subscribe__list > li > span {
