@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-.subscribe {
-
+.magazine {
     &__list {
         @include font(2.6rem,3.2rem);
         margin-top: 6rem;
@@ -16,7 +15,7 @@
         }
 
         @include mq(lg) {
-            margin: 8rem 5rem 0;
+            margin: 8rem 0 0;
         }
 
         > li {
@@ -31,26 +30,22 @@
 
             @include mq(md) {
                 @include grid-col;
-                @include col-size(1/4);
-                padding-left: 7rem;
+                @include col-size(1/3);
 
-                &::before {
-                    @include size(5.5rem);
-                    @include font(4.6rem,4.6rem);
-                }
+                margin-bottom: 3rem;
             }
 
+            @include mq(ms) {
+                @include col-size(1/5);
 
-            &::before {
-                @include size(10rem);
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 2rem;
-                border-radius: 50%;
-                background: $color-brand;
-                color: #fff;
-                content: attr(data-number);
+                margin-bottom: 0;
+            }
+
+            > img {
+                margin-bottom: 3rem;
+                width: 100%;
+                height: auto;
+                vertical-align: top;
             }
 
             > span {

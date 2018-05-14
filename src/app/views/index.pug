@@ -13,6 +13,17 @@ block main
             include components/_heroes
 
 
+    .section#magazine(data-bg-alt)
+        .container
+            .section__header
+                h2 Преимущества журнала:
+
+            include components/_magazine
+
+            .section__footer.js-navigate
+                a.button.button--alternative(href="#promo" data-size="large") Подписаться
+
+
     .section#subscribe(data-bg-alt)
         .container
             .section__header
@@ -20,8 +31,8 @@ block main
 
             include components/_subscribe
 
-            .section__footer
-                a.button.button--alternative(href="#" data-size="large") Подписаться
+            .section__footer.js-navigate
+                a.button.button--alternative(href="#promo" data-size="large") Подписаться
 
 
     .section#reviews

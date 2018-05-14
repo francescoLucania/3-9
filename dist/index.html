@@ -19,6 +19,7 @@
         <nav class="site-header__navigate js-navigate">
           <ul>
             <li><a href="#heroes">Персонажи</a></li>
+            <li><a href="#magazine">Журнал</a></li>
             <li><a href="#subscribe">Подписка</a></li>
             <li><a href="#reviews">Отзывы</a></li>
           </ul>
@@ -28,6 +29,7 @@
       <nav class="mobile-menu js-navigate">
         <ul>
           <li><a href="#heroes">Персонажи</a></li>
+          <li><a href="#magazine">Журнал</a></li>
           <li><a href="#subscribe">Подписка</a></li>
           <li><a href="#reviews">Отзывы</a></li>
         </ul>
@@ -42,7 +44,7 @@
       </nav>
     </header>
     <main>
-      <div class="promo js-promo">
+      <div class="promo js-promo" id="promo">
         <div class="promo__item js-promo-item"></div>
         <div class="promo__illustration" id="illustration-1"><img src="img/i1.png" alt=""></div>
         <div class="promo__illustration" id="illustration-2"><img src="img/palac.png" alt=""></div>
@@ -194,13 +196,13 @@
           </div>
         </div>
       </div>
-      <div class="section" id="subscribe" data-bg-alt>
+      <div class="section" id="magazine" data-bg-alt>
         <div class="container">
           <div class="section__header">
-            <h2>Преимущества подписки:</h2>
+            <h2>Преимущества журнала:</h2>
           </div>
-          <div class="subscribe">
-            <ul class="subscribe__list">
+          <div class="magazine" id="magazine">
+            <ul class="magazine__list">
               <li><img src="img/tridevyatoe___1.png" alt=""><span>Увлекательные задания и развивающие головоломки</span></li>
               <li><img src="img/tridevyatoe___2.png" alt=""><span>Каждые две недели - новая сказка</span></li>
               <li><img src="img/tridevyatoe___3.png" alt=""><span>Конкурсы для подписчиков с клевыми призами</span></li>
@@ -208,7 +210,23 @@
               <li><img src="img/tridevyatoe___5.png" alt=""><span>Игры-ходилки для развлечения всей семьи</span></li>
             </ul>
           </div>
-          <div class="section__footer"><a class="button button--alternative" href="#" data-size="large">Подписаться</a></div>
+          <div class="section__footer js-navigate"><a class="button button--alternative" href="#promo" data-size="large">Подписаться</a></div>
+        </div>
+      </div>
+      <div class="section" id="subscribe" data-bg-alt>
+        <div class="container">
+          <div class="section__header">
+            <h2>Преимущества подписки:</h2>
+          </div>
+          <div class="subscribe">
+            <ul class="subscribe__list">
+              <li data-number="1"><span>Не нужно искать журнал в&nbsp;магазинах</span></li>
+              <li data-number="2"><span>Доставка до&nbsp;почтового ящика</span></li>
+              <li data-number="3"><span>Дешевле чем в магазине</span></li>
+              <li data-number="4"><span>Бесплатная доставка 2&nbsp;раза в месяц</span></li>
+            </ul>
+          </div>
+          <div class="section__footer js-navigate"><a class="button button--alternative" href="#promo" data-size="large">Подписаться</a></div>
         </div>
       </div>
       <div class="section" id="reviews">

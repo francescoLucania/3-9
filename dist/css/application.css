@@ -1853,7 +1853,7 @@ a.button {
 
 @media all and (min-width: 1379px) {
   .subscribe__list {
-    margin: 8rem 0 0;
+    margin: 8rem 5rem 0;
   }
 }
 
@@ -1870,8 +1870,8 @@ a.button {
 
 @media all and (min-width: 768px) {
   .subscribe__list > li {
-    width: 33.333%;
-    margin-bottom: 3rem;
+    width: 25%;
+    padding-left: 7rem;
   }
 }
 
@@ -1903,21 +1903,165 @@ a.button {
   }
 }
 
+@media all and (min-width: 768px) {
+  .subscribe__list > li::before {
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 4.6rem;
+    line-height: 1;
+  }
+}
+
+.subscribe__list > li::before {
+  width: 10rem;
+  height: 10rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  background: #4fca54;
+  color: #fff;
+  content: attr(data-number);
+}
+
+.subscribe__list > li > span {
+  position: relative;
+  display: block;
+}
+
+.magazine__list {
+  font-size: 2.6rem;
+  line-height: 1.231;
+  margin-top: 6rem;
+  font-family: CoreSansDS35Black;
+}
+
+@media all and (min-width: 768px) {
+  .magazine__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 6rem 0 -3rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 767px) {
+  .magazine__list {
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 768px) {
+  .magazine__list {
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 1024px) {
+  .magazine__list {
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 1379px) {
+  .magazine__list {
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+  }
+}
+
+@media all and (min-width: 1379px) {
+  .magazine__list {
+    margin: 8rem 0 0;
+  }
+}
+
+.magazine__list > li {
+  position: relative;
+  text-align: center;
+}
+
+@media all and (max-width: 767px) {
+  .magazine__list > li:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .magazine__list > li {
+    width: 33.333%;
+    margin-bottom: 3rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 767px) {
+  .magazine__list > li {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 768px) {
+  .magazine__list > li {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 1024px) {
+  .magazine__list > li {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 1379px) {
+  .magazine__list > li {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
 @media all and (min-width: 1024px) {
-  .subscribe__list > li {
+  .magazine__list > li {
     width: 20%;
     margin-bottom: 0;
   }
 }
 
-.subscribe__list > li > img {
+.magazine__list > li > img {
   margin-bottom: 3rem;
   width: 100%;
   height: auto;
   vertical-align: top;
 }
 
-.subscribe__list > li > span {
+.magazine__list > li > span {
   position: relative;
   display: block;
 }
